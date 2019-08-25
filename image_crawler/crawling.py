@@ -14,7 +14,7 @@ def main():
     res = google_images_download.googleimagesdownload()
     args = {
         "keywords": arguments.keywords,
-        "limits": 10,
+        "limits": 100,
         "print_urls": True,
         "no_directory": True,
         "output_directory": arguments.paths,

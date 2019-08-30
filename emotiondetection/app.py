@@ -12,9 +12,9 @@ DEBUG = True
 
 # instanciate the camera
 camera = PiCamera()
-camera.resolution = (1920, 1080)
+camera.resolution = (640, 480)
 camera.framerate = 30
-rawCapture = PiRGBArray(camera, size=(1920, 1080))
+rawCapture = PiRGBArray(camera, size=(640, 480))
 
 # allow the camera to warmup
 time.sleep(0.1)

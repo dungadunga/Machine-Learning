@@ -80,5 +80,6 @@ for frame in camera.capture_continuous(rawCapture, format="bgr", use_video_port=
     # if the `q` key was pressed, break from the loop
     if key == ord("q"):
         cv2.destroyAllWindows()
+        camera.close()
         break
 
